@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700');
+
+html {
+  font-family: 'Oswald', sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  color: black;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 2.1rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
+
+p, span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(white, #e6eef0) fixed;
+}
+
+/*header styles*/
+
+header {
+
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+}
+
+.ident {
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+.ident span {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.ident span:first-of-type {
+  font-weight: 700;
+}
+
+nav.mobile {
+  display: none;
+}
+
+nav {
+  font-size: 1.6rem;
+}
+
+nav.desktop span {
+  margin-left: 1.6rem;
+}
+
+nav span a {
+  text-decoration: none;
+  transition: all 200ms ease-out;
+}
+
+nav span a:hover {
+  color: #FF63AB;
+}
+
+/*sections*/
+section.banner .container, section.articles-module.container {
+  display: flex;
+}
+
+/*banner section*/
+.left-section {
+  flex: 2 1 60%;
+  padding: 3.2rem 2.4rem;
+}
+
+.right-section {
+  flex: 2 1 40%;
+  padding: 1.6rem 0 3.2rem 0;
+}
+
+section.banner {
+  background-color: #e6e5e5;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+section.banner .right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to left, rgba(255,255,255,0.2), rgba(255,255,255,0));
+  padding-right: 12rem;
+}
+
+section.banner .right-section p {
+  margin: 2.5rem 0;
+  font-size: 2rem;
+}
+
+section.banner button {
+  background-color: #114F59;
+  color: #fff;
+  padding: 1rem;
+  margin-right: 1rem;
+  border: none;
+  transition: background-color 400ms ease-out;
+}
+
+section.banner button:hover {
+  background-color: #FF63AB;
+}
+
+/*Articles module*/
+.articles-module .left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.articles-module .left-section img {
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+
+.articles-module .left-section p {
+  margin: 2.4rem 0;
+}
+
+.articles-module .right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-left: 1px solid #e6e5e5;
+}
+
+
+.articles-module .right-section .article img {
+  width: 35%;
+  float: left;
+  padding: 1.6rem;
+}
+
+.articles-module .right-section .article {
+  border-bottom: 1px solid #e6e5e5;
+  display: flex;
+  align-items: center;
+}
+
+.articles-module .right-section .article:hover {
+  background: linear-gradient(to left, rgba(255,99,171,0.1), rgba(0,0,0,0));
+}
+
+.article .details p, .article .details span {
+  font-size: 1.3rem;
+  margin: 3px 0;
+}
+
+.article .details span a {
+  text-decoration: none;
+  color: #114F59;
+  transition: all 200ms ease-out;
+}
+
+.article .details span a:hover {
+  text-decoration: underline;
+  color: #FF63AB;
+}
+
+.articles-module .right-section .article:last-of-type {
+  background-color: #e6e5e5;
+}
