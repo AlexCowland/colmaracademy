@@ -46,6 +46,7 @@ img, video {
   width: 100%;
 }
 
+/*adds a subtle gradient to background*/
 body {
   background: linear-gradient(white, #e6eef0) fixed;
 }
@@ -74,6 +75,7 @@ header .container {
   font-weight: 700;
 }
 
+/*nav styles*/
 nav.mobile {
   display: none;
 }
@@ -136,14 +138,14 @@ section.banner .container, section.articles-module.container {
 
 .right-section .article {
   border-bottom: 1px solid #e6e5e5;
-  border-right: 3px solid rgba(255,99,171,0);
+  border-right: 3px solid rgba(255,99,171,0); /*Transparent border on initial state avoids glitch when hover border is applied*/
   display: flex;
   align-items: center;
+  transition: border-right 300ms ease-out;
 }
 
 .right-section .article:hover {
-  background: linear-gradient(to left, rgba(255,99,171,0.1), rgba(0,0,0,0));
-  border-right: 3px solid rgba(255,99,171,1);
+    border-right: 3px solid rgba(255,99,171,1); /*Hover border*/
 }
 
 .right-section .article img {
@@ -161,13 +163,12 @@ section.banner .container, section.articles-module.container {
 
 .details span a {
   text-decoration: none;
-  color: #114F59;
+  color: #FF63AB;
   transition: all 200ms ease-out;
 }
 
 .details span a:hover {
   text-decoration: underline;
-  color: #FF63AB;
 }
 
 .article video {
@@ -215,6 +216,36 @@ section.banner button:hover {
   display: none;
 }
 
+.speech-bubble p {
+  color: #fff;
+}
+
+/*Speech bubble effect. As the website is for education I wanted to give
+the website a creative feel. I discovered the CSS for this on another
+site and customised the styles for this website*/
+.speech-bubble {
+	position: relative;
+	background-color: #114f59;
+	border-radius: 1.4em;
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 1.281em solid transparent;
+	border-top-color: #114f59;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10.641em;
+	margin-bottom: -1.281em;
+}
+
 /*Courses section*/
 
 .courses {
@@ -232,19 +263,19 @@ section.banner button:hover {
   flex: 1 1 250px;
   background-color: #fff;
   margin: 0 1.6rem 3.2rem 1.6rem;
-  border-bottom: 5px solid rgba(255,99,171,0);
+  border-bottom: 5px solid rgba(255,99,171,0); /*Transparent border on initial state avoids glitch when hover border is applied*/
   transition: border-bottom 300ms ease-out;
 }
 
 .course-item:hover {
-  border-bottom: 5px solid rgba(255,99,171,1);
+  border-bottom: 5px solid rgba(255,99,171,1); /*Hover border*/
 }
 
 .course-content {
   padding: 1.6rem 1.6rem 2.4rem;
 }
 
-.course-content h3::after {
+.course-content h3::after { /*Automatically applies COURSE text under the heading of every course title*/
   display: block;
   content: "COURSES";
   margin: 0.8rem 0;
@@ -285,6 +316,7 @@ footer .container span {
 
 @media only screen and (max-width: 800px) {
 
+  /*Nav section*/
   nav.desktop,
   .ident {
     display: none;
@@ -309,6 +341,7 @@ footer .container span {
     padding: 3.2rem 1.6rem;
   }
 
+  /*articles section*/
   .right-section {
     padding: 3.2rem 1.6rem;
   }
@@ -369,8 +402,6 @@ footer .container span {
   .thesis .right-section {
     display: none;
   }
-
-
 
   /*Footer*/
   .other-links {

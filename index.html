@@ -19,7 +19,7 @@
             <span>Colmar</span><span>Academy</span>
           </div>
 
-          <nav class="desktop">
+          <nav class="desktop" role="navigation">
             <span><a href="#">On Campus</a></span>
             <span><a href="#">Online</a></span>
             <span><a href="#">For Companies</a></span>
@@ -36,7 +36,7 @@
         </div>
       </header>
 
-      <section class="banner">
+      <section class="banner" role="banner">
         <div class="container">
           <div class="left-section">
             <img src="./resources/img/banner.jpg" alt="Colmar Academy students studying together" />
@@ -51,14 +51,16 @@
         </div>
       </section>
 
-      <section class="articles-module container">
+      <section class="articles-module container" role="main">
 
         <div class="article left-section">
           <img src="./resources/img/information-main.jpg" alt="man reading a book" />
           <h2>It doesn't hurt to keep practicing</h2>
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ac lacus rhoncus, consectetur neque in, tincidunt sapien. Quisque sed nunc aliquam, finibus enim eu, venenatis ante.
-          </p>
+          <div class="speech-bubble">
+            <p>
+              "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ac lacus rhoncus, consectetur neque in, tincidunt sapien. Quisque sed nunc aliquam, finibus enim eu, venenatis ante."
+            </p>
+          </div>
           <span>Emanuel, Sr Strategist at Hiring.com</span>
         </div>
 
@@ -71,7 +73,7 @@
               <p>
                 Tue 10/11 &amp; Wed 10/12: 8am-3pm
               </p>
-              <span class="read-more"><a href="#">Read more</a></span>
+              <span class="read-more" aria-label="read more about Colmar Academy orientation"><a href="#">Read more</a></span>
             </div>
           </div>
 
@@ -83,7 +85,7 @@
               <p>
                 Find which campus is close by you
               </p>
-              <span class="read-more"><a href="#">Read more</a></span>
+              <span class="read-more" aria-label="read more about on campus at Colmar Academy"><a href="#">Read more</a></span>
             </div>
           </div>
 
@@ -95,21 +97,21 @@
               <p>
                 Join a keynote with Oliver Sack about music in medical treatment
               </p>
-              <span class="read-more"><a href="#">Read more</a></span>
+              <span class="read-more" aria-label="read more more about the guest lecture with Oliver Sack"><a href="#">Read more</a></span>
             </div>
           </div>
         </div>
 
       </section>
 
-      <section class="courses container">
+      <section class="courses container" role="complementary"><!--begin courses section-->
 
         <h2>Start learning</h2>
 
         <div class="course-item">
           <img src="./resources/img/course-software.jpg" alt="Software engineering" />
           <div class="course-content">
-            <h3>Software engineering</h3> <!--add COURSES in css with ::after pseudo element-->
+            <h3>Software engineering</h3>
             <p>
               Web Development, Mobile Development, iOT, APIs
             </p>
@@ -119,7 +121,7 @@
         <div class="course-item">
           <img src="./resources/img/course-computer-art.jpg" alt="Computer art" />
           <div class="course-content">
-            <h3>Computer art</h3> <!--add COURSES in css with ::after pseudo element-->
+            <h3>Computer art</h3>
             <p>
               Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation
             </p>
@@ -129,7 +131,7 @@
         <div class="course-item">
           <img src="./resources/img/course-design.jpg" alt="Design" />
           <div class="course-content">
-            <h3>Design</h3> <!--add COURSES in css with ::after pseudo element-->
+            <h3>Design</h3>
             <p>
               User Experience Design, User Research, Visual Design
             </p>
@@ -139,7 +141,7 @@
         <div class="course-item">
           <img src="./resources/img/course-data.jpg" alt="Data" />
           <div class="course-content">
-            <h3>Data</h3> <!--add COURSES in css with ::after pseudo element-->
+            <h3>Data</h3>
             <p>
               Data Science, Big Data, SQL, Data Visualisation
             </p>
@@ -149,7 +151,7 @@
         <div class="course-item">
           <img src="./resources/img/course-business.jpg" alt="Business" />
           <div class="course-content">
-            <h3>Business</h3> <!--add COURSES in css with ::after pseudo element-->
+            <h3>Business</h3>
             <p>
               Product Development, Business Development, Startup
             </p>
@@ -159,16 +161,16 @@
         <div class="course-item">
           <img src="./resources/img/course-marketing.jpg" alt="Marketing" />
           <div class="course-content">
-            <h3>Marketing</h3> <!--add COURSES in css with ::after pseudo element-->
+            <h3>Marketing</h3>
             <p>
               Analytics, Content Marketing, Mobile Marketing
             </p>
           </div>
         </div>
 
-      </section>
+      </section><!--end courses section-->
 
-      <section class="thesis container">
+      <section class="thesis container" role="complementary"><!--begin thesis section-->
 
         <h2>Thesis exhibit</h2>
 
@@ -205,9 +207,9 @@
           </div>
         </div>
 
-      </section>
+      </section><!--end thesis section-->
 
-        <footer>
+        <footer role="contentinfo"><!--begin footer-->
 
           <div class="container">
 
