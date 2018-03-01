@@ -108,7 +108,7 @@ section.banner .container, section.articles-module.container {
 
 .left-section {
   flex: 2 1 60%;
-  padding: 3.2rem 2.4rem 3.2rem 0;
+  padding: 3.2rem 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -154,6 +154,10 @@ section.banner .container, section.articles-module.container {
 }
 
 /*General article styles*/
+
+.details {
+  padding-right: 1.6rem;
+}
 
 .details p, .details span {
   font-size: 1.3rem;
