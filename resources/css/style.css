@@ -436,13 +436,18 @@ footer .container span {
     content: "";
   }
 
+  .course-content h3 {
+    color: #fff;
+  }
+
   .course-item {
     flex: 1 1 250px;
-    background-color: #fff;
+    background-color: #114F59;
     margin: 0.8rem 0;
     padding: 1.6rem 1.6rem 2.4rem;
     border-bottom: none;
     transition: none;
+    border-radius: 0.5rem;
   }
 
   .course-item:hover {
