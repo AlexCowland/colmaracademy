@@ -349,6 +349,11 @@ footer .container span {
     display: none;
   }
 
+  .right-section .article img {
+    max-width: 100%;
+    margin: 0;
+}
+
   .articles-module .article img:first-of-type {
     display: none;
   }
