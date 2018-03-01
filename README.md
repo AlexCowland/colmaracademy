@@ -1,5 +1,5 @@
 # Colmar Academy Project
-[View project](https://alexcowland.github.io/colmaracademy/)
+[View project](https://alexcowland.github.io/colmaracademy/)  
 A Codecademy project website for a fictional college. 
 
 #### My style choices
