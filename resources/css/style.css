@@ -149,9 +149,8 @@ section.banner .container, section.articles-module.container {
 }
 
 .right-section .article img {
-  width: 35%;
-  float: left;
-  padding: 1.6rem;
+  max-width: 35%;
+  margin: 1.6rem;
 }
 
 /*General article styles*/
